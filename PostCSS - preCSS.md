@@ -1,6 +1,6 @@
 # PostCSS - preCSS
 
-> precss 是postcss的预处理插件， 功能类似于less、sass. 其语法也与sass最为接近。
+> precss 是postcss的预处理插件， 功能类似于less、sass. 其语法也与scss最为接近。
 
 ## 配置插件
 
@@ -184,3 +184,10 @@ background-color: $light-grey;
 
 条件判断和遍历在开发中很少使用，为节省时间暂不描述，以后补上。有兴趣的可以参考https://github.com/jonathantneal/precss
 
+### webstorm 编写preCss
+
+webstorm中有自带的.less, .sass, .scss文件编辑器，但搜不到专门的precss的插件， 因为precss与scss的语法最为接近，可以将 .css与scss文件类型关联起来。
+
+1. Preferences -> Editor -> File Types -> Cascading Style Sheet 在Registered Patterns中删除 .css关联
+2. Preferences -> Editor -> File Types -> SCSS 下在Registered Patterns中添加 .css关联
+3. 随便找一个css文件，右键，将文件类型关联改成scss就可以了。
